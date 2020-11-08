@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  background-color: rgb(172, 172, 172);
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 20px rgba(130, 130, 130, 0.364);
+  font-size: 1.5rem;
+
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+}
