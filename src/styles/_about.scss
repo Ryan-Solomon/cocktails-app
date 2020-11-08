@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  place-items: center;
+  margin: 5rem;
+  background-color: #333;
+  color: white;
+  padding: 1.5rem;
+  height: 80vh;
+  box-shadow: 2px 2px 15px rgba(162, 162, 162, 0.638);
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .content {
+    margin-top: 1rem;
+    width: 80%;
+    font-size: 2rem;
+  }
+}
