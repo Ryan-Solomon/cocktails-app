@@ -9,11 +9,15 @@
 
   .nav-links ul {
     display: flex;
-    list-style: none;
 
     li {
       margin: 1rem;
+      list-style: none;
       cursor: pointer;
+      transition: 0.1s ease-in;
+      &:hover {
+        transform: scale(1.06);
+      }
     }
   }
 }
