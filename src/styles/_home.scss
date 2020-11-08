@@ -77,4 +77,9 @@
   display: grid;
   width: 50vw;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+.cocktail-card img {
+  width: 15rem;
 }
