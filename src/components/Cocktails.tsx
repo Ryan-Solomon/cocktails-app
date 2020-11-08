@@ -1,4 +1,5 @@
 import React from 'react';
+import CocktailCard from './CocktailCard';
 
 const Cocktails = () => {
   return (
@@ -7,12 +8,10 @@ const Cocktails = () => {
         <h1>Cocktails</h1>
       </div>
       <div className='cocktails__cards'>
-        <div>Card 1</div>
-        <div>Card 2</div>
-        <div>Card 3</div>
-        <div>Card 4</div>
-        <div>Card 5</div>
-        <div>Card 6</div>
+        <CocktailCard />
+        <CocktailCard />
+        <CocktailCard />
+        <CocktailCard />
       </div>
     </div>
   );

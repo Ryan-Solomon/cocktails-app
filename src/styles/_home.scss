@@ -53,9 +53,20 @@
 
 .cocktails-container {
   display: flex;
+  margin: 5rem;
+  padding: 1rem;
   flex-direction: column;
   align-items: center;
   background-color: rgb(204, 204, 204);
+
+  .cocktails__header {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 1rem;
+    }
+  }
 }
 
 .cocktails__cards {
