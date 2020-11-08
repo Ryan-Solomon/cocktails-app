@@ -14,13 +14,15 @@ type InitialContext = {
 
 const AppContext = createContext<InitialContext | null>(null);
 
-const AppProvider: FC<React.ReactChild> = ({ children }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+export const AppProvider: FC<React.ReactNode> = ({ children }) => {
+  const [searchTerm, setSearchTerm] = useState('a');
   const [cocktails, setCocktails] = useState<TCocktail[]>([]);
 
   useEffect(() => {
     const fetchCocktails = async () => {
-      const res = await fetch('');
+      const res = await fetch(
+        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`
+      );
       const { drinks } = await res.json();
       setCocktails(drinks);
     };
@@ -39,6 +41,6 @@ const AppProvider: FC<React.ReactChild> = ({ children }) => {
   );
 };
 
-const useAppContext = () => {
+export const useAppContext = () => {
   return useContext(AppContext);
 };

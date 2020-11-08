@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { TCocktail } from '../types/types';
 
-const CocktailCard = () => {
+type Props = {
+  cocktail: TCocktail;
+};
+
+const CocktailCard: FC<Props> = ({ cocktail }) => {
   return (
     <div className='cocktail-card'>
-      <h4>Some Cocktail</h4>
-      <h4>More info</h4>
-      <h4>Recips</h4>
+      <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+      <h4>{cocktail.strDrink}</h4>
+      <p>{cocktail.strInstructions}</p>
     </div>
   );
 };
